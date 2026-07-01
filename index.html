@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Shop genuine PC components at CTech — processors, GPUs, motherboards, RAM and more. Free shipping over $49. Expert-backed parts for your dream build.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="CTech Inc.">
+  <meta name="keywords" content="PC components, processors, graphics cards, motherboards, RAM, CTech, computer parts, build a PC">
+  <title>CTech — Genuine PC Components | Shop CPUs, GPUs &amp; More</title>
+  <link rel="canonical" href="index.html">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+  <meta property="og:title" content="CTech — Genuine PC Components">
+  <meta property="og:description" content="Shop genuine PC components at CTech. Free shipping over $49 on processors, GPUs, motherboards and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+
+  <!-- Site header: logo, primary navigation, search, cart -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="#home" class="logo" aria-label="CTech home">
+        <img src="images/ctech-logo.webp" alt="CTech company logo, a stylized white C and T monogram" class="logo__img" width="40" height="40">
+        <span class="logo__text">CTech</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home" class="nav__link nav__link--active">Home</a>
+        <a href="#products" class="nav__link">Products</a>
+        <a href="#categories" class="nav__link">Categories</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="search-bar" role="search">
+          <input type="search" class="search-bar__input" placeholder="Search processors, GPUs, RAM..." aria-label="Search products">
+          <svg class="search-bar__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </div>
+        <button class="icon-btn mobile-search-btn" aria-label="Search products">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Shopping cart, 1 item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-badge">1</span>
+        </button>
+        <label for="nav-toggle" class="hamburger" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile navigation overlay -->
+  <aside class="mobile-menu" role="dialog" aria-label="Navigation menu" aria-modal="true">
+    <label for="nav-toggle" class="mobile-menu__overlay" aria-label="Close navigation menu"></label>
+    <div class="mobile-menu__panel">
+      <div class="mobile-menu__close">
+        <label for="nav-toggle" class="mobile-menu__close-btn" aria-label="Close navigation menu">&times;</label>
+      </div>
+      <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+        <a href="#home" class="mobile-menu__link mobile-menu__link--active">Home</a>
+        <a href="#products" class="mobile-menu__link">Products</a>
+        <a href="#categories" class="mobile-menu__link">Categories</a>
+        <a href="#about" class="mobile-menu__link">About</a>
+        <a href="#contact" class="mobile-menu__link">Contact</a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Main content: hero → categories → products → features → CTA -->
+  <main id="main-content">
+
+  <!-- Hero (Z-pattern: headline left → visual right → CTA below) -->
+  <section class="hero z-pattern" id="home" aria-labelledby="hero-heading">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          New Arrivals — RTX 4000 Series in Stock
+        </div>
+        <h1 class="hero__title" id="hero-heading">
+          Build the PC <span class="hero__title-accent">You Have Always Wanted</span>
+        </h1>
+        <p class="hero__subtitle">Powering Your Next Build</p>
+        <p class="hero__desc">
+          From high-performance processors and cutting-edge graphics cards to reliable motherboards and blazing-fast storage — find every component you need to build your dream machine.
+        </p>
+        <div class="hero__buttons">
+          <a href="#products" class="btn btn--primary">Shop Now &rarr;</a>
+          <a href="#categories" class="btn btn--outline">Browse Categories</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__orbit-system">
+          <div class="hero__orbit-ring hero__orbit-ring--square" aria-hidden="true"></div>
+          <div class="hero__orbit-ring hero__orbit-ring--circle" aria-hidden="true"></div>
+          <div class="hero__orbit-ring hero__orbit-ring--circle-inner" aria-hidden="true"></div>
+          <div class="hero__orbit-track">
+            <div class="hero__spec hero__spec--orbit-top">
+              <div class="hero__spec-inner">
+                CLOCK SPEED
+                <strong>5.8 GHz</strong>
+              </div>
+            </div>
+            <div class="hero__spec hero__spec--orbit-bottom">
+              <div class="hero__spec-inner">
+                STARTING FROM
+                <strong>$589</strong>
+              </div>
+            </div>
+          </div>
+          <div class="hero__chip-wrap">
+            <div class="hero__chip" aria-label="Intel Core i9-13900K processor">
+              <span class="hero__chip-label">INTEL</span>
+              <strong class="hero__chip-value">i9</strong>
+              <span class="hero__chip-sub">13900K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Category -->
+  <section class="categories z-pattern" id="categories" aria-labelledby="categories-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Shop by Category</span>
+        <h2 class="section-title" id="categories-heading">Find Every Part You Need</h2>
+        <p class="section-desc">From CPUs to cases, we stock the full range of PC components from leading brands.</p>
+      </div>
+      <div class="category-grid">
+        <article class="category-card">
+          <div class="category-card__image-wrap">
+            <img src="images/category-processors.webp" alt="An Intel Core i5 processor chip resting on a circuit board" class="category-card__image" width="293" height="200">
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Processors</h3>
+            <p class="category-card__desc">Power for every build.</p>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image-wrap">
+            <img src="images/category-motherboards.webp" alt="A high-end MSI motherboard with black heat sinks and multiple expansion slots" class="category-card__image" width="293" height="200">
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Motherboards</h3>
+            <p class="category-card__desc">The foundation of your PC.</p>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image-wrap">
+            <img src="images/category-graphics-cards.webp" alt="A powerful MSI dual-fan graphics card with a sleek black design" class="category-card__image" width="293" height="200">
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Graphics Cards</h3>
+            <p class="category-card__desc">Smooth visuals and performance.</p>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image-wrap">
+            <img src="images/category-ram.webp" alt="Two sticks of Corsair Vengeance RGB RAM with vibrant multi-colored lighting" class="category-card__image" width="293" height="200">
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">RAM</h3>
+            <p class="category-card__desc">Faster multitasking.</p>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image-wrap">
+            <img src="images/category-storage.webp" alt="A Samsung 870 EVO SATA SSD and a high-speed NVMe M.2 SSD side by side" class="category-card__image" width="293" height="200">
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Storage</h3>
+            <p class="category-card__desc">Speed and space for files.</p>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image-wrap">
+            <img src="images/category-power-supplies.webp" alt="A Corsair RM650 fully modular power supply unit showing its fan intake" class="category-card__image" width="293" height="200">
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Power Supplies</h3>
+            <p class="category-card__desc">Stable power for your system.</p>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image-wrap">
+            <img src="images/category-pc-cases.webp" alt="A black mid-tower PC case featuring a tempered glass side panel and three glowing blue RGB front fans" class="category-card__image" width="293" height="200">
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">PC Cases</h3>
+            <p class="category-card__desc">Protection with style.</p>
+          </div>
+        </article>
+        <article class="category-card">
+          <div class="category-card__image-wrap">
+            <img src="images/category-accessories.webp" alt="A set of black over-ear gaming headphones and a matching gaming mouse" class="category-card__image" width="293" height="200">
+          </div>
+          <div class="category-card__body">
+            <h3 class="category-card__title">Accessories</h3>
+            <p class="category-card__desc">Complete your setup.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products z-pattern" id="products" aria-labelledby="products-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Featured Products</span>
+        <h2 class="section-title" id="products-heading">Top-Selling Components</h2>
+        <p class="section-desc">Handpicked by our experts — the most popular and highest-rated parts this month.</p>
+      </div>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <div class="product-card__image-wrap">
+            <span class="product-card__badge product-card__badge--blue">Best Seller</span>
+            <img src="images/product-intel-i5-13600k.webp" alt="Retail box for an Intel Core i5-13600K processor with blue Intel branding" class="product-card__image" width="291" height="220">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__brand">Intel</p>
+            <h3 class="product-card__name">Core i5-13600K Processor</h3>
+            <p class="product-card__specs">14 Cores &bull; 3.5 GHz Base &bull; 125W TDP</p>
+            <div class="product-card__rating">
+              <div class="stars" aria-label="4.9 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="product-card__reviews">4.9 (1,243 reviews)</span>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__price-wrap">
+                <span class="product-card__price">$289.99</span>
+              </div>
+              <button class="add-btn" aria-label="Add Intel Core i5-13600K Processor to cart">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image-wrap">
+            <span class="product-card__badge product-card__badge--blue">Top Rated</span>
+            <img src="images/product-corsair-vengeance-ram.webp" alt="Four sticks of Corsair Vengeance DDR4 RAM with RGB lighting along the top edge" class="product-card__image" width="291" height="220">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__brand">Corsair</p>
+            <h3 class="product-card__name">Vengeance 16GB DDR4 RAM</h3>
+            <p class="product-card__specs">3200MHz &bull; CL16 &bull; Dual Channel Kit</p>
+            <div class="product-card__rating">
+              <div class="stars" aria-label="4.8 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="product-card__reviews">4.8 (956 reviews)</span>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__price-wrap">
+                <span class="product-card__price">$54.99</span>
+              </div>
+              <button class="add-btn" aria-label="Add Corsair Vengeance 16GB DDR4 RAM to cart">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image-wrap">
+            <span class="product-card__badge product-card__badge--red">Sale</span>
+            <img src="images/product-nvidia-rtx-4070.webp" alt="NVIDIA GeForce RTX 4070 Founders Edition graphics card with dual-fan cooling system" class="product-card__image" width="291" height="220">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__brand">NVIDIA</p>
+            <h3 class="product-card__name">RTX 4070 Graphics Card</h3>
+            <p class="product-card__specs">12GB GDDR6X &bull; DLSS 3 &bull; 200W TDP</p>
+            <div class="product-card__rating">
+              <div class="stars" aria-label="4.9 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="product-card__reviews">4.9 (2,104 reviews)</span>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__price-wrap">
+                <span class="product-card__price">$589.99</span>
+                <span class="product-card__price--old">$649.99</span>
+              </div>
+              <button class="add-btn" aria-label="Add NVIDIA RTX 4070 Graphics Card to cart">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image-wrap">
+            <span class="product-card__badge product-card__badge--red">Sale</span>
+            <img src="images/product-samsung-870-evo.webp" alt="Samsung 870 EVO 1TB 2.5-inch SATA III internal solid state drive with Samsung logo" class="product-card__image" width="291" height="220">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__brand">Samsung</p>
+            <h3 class="product-card__name">870 EVO 1TB SSD</h3>
+            <p class="product-card__specs">SATA III &bull; 560 MB/s Read &bull; 2.5-inch</p>
+            <div class="product-card__rating">
+              <div class="stars" aria-label="4.8 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="product-card__reviews">4.8 (3,421 reviews)</span>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__price-wrap">
+                <span class="product-card__price">$89.99</span>
+                <span class="product-card__price--old">$109.99</span>
+              </div>
+              <button class="add-btn" aria-label="Add Samsung 870 EVO 1TB SSD to cart">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image-wrap">
+            <span class="product-card__badge product-card__badge--blue">New</span>
+            <img src="images/product-asus-rog-strix-z790.webp" alt="ASUS ROG Strix Z790-E Gaming WiFi motherboard showing black PCB, heatsinks, and RGB lighting" class="product-card__image" width="291" height="220">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__brand">ASUS</p>
+            <h3 class="product-card__name">ROG Strix Z790-E Motherboard</h3>
+            <p class="product-card__specs">LGA1700 &bull; DDR5 &bull; PCIe 5.0 &bull; ATX</p>
+            <div class="product-card__rating">
+              <div class="stars" aria-label="4.8 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="product-card__reviews">4.8 (425 reviews)</span>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__price-wrap">
+                <span class="product-card__price">$449.99</span>
+              </div>
+              <button class="add-btn" aria-label="Add ASUS ROG Strix Z790-E Motherboard to cart">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image-wrap">
+            <span class="product-card__badge product-card__badge--red">Sale</span>
+            <img src="images/product-evga-supernova-850w.webp" alt="EVGA SuperNOVA 850W Gold power supply unit and its retail packaging box" class="product-card__image" width="291" height="220">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__brand">EVGA</p>
+            <h3 class="product-card__name">SuperNOVA 850W Gold PSU</h3>
+            <p class="product-card__specs">80+ Gold &bull; Fully Modular &bull; 10 yr Warranty</p>
+            <div class="product-card__rating">
+              <div class="stars" aria-label="4.7 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="product-card__reviews">4.7 (2,104 reviews)</span>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__price-wrap">
+                <span class="product-card__price">$129.99</span>
+                <span class="product-card__price--old">$149.99</span>
+              </div>
+              <button class="add-btn" aria-label="Add EVGA SuperNOVA 850W Gold PSU to cart">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image-wrap">
+            <span class="product-card__badge product-card__badge--blue">Top Rated</span>
+            <img src="images/product-noctua-nh-d15.webp" alt="Noctua NH-D15 chromax.black dual-tower CPU air cooler with two black NF-A15 PWM fans" class="product-card__image" width="291" height="220">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__brand">Noctua</p>
+            <h3 class="product-card__name">NH-D15 CPU Cooler</h3>
+            <p class="product-card__specs">Dual Tower &bull; 2x 140mm Fans &bull; 165mm Height</p>
+            <div class="product-card__rating">
+              <div class="stars" aria-label="4.9 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="product-card__reviews">4.9 (7,831 reviews)</span>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__price-wrap">
+                <span class="product-card__price">$109.99</span>
+              </div>
+              <button class="add-btn" aria-label="Add Noctua NH-D15 CPU Cooler to cart">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image-wrap">
+            <span class="product-card__badge product-card__badge--red">Sale</span>
+            <img src="images/product-fractal-define-7.webp" alt="Fractal Design Define 7 Mid-Tower ATX computer case in black with sound dampening panels" class="product-card__image" width="291" height="220">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__brand">Fractal</p>
+            <h3 class="product-card__name">Define 7 Mid-Tower Case</h3>
+            <p class="product-card__specs">ATX &bull; Sound Dampened &bull; 3x 140mm Fans</p>
+            <div class="product-card__rating">
+              <div class="stars" aria-label="4.8 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="product-card__reviews">4.8 (1,547 reviews)</span>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__price-wrap">
+                <span class="product-card__price">$164.99</span>
+                <span class="product-card__price--old">$189.99</span>
+              </div>
+              <button class="add-btn" aria-label="Add Fractal Define 7 Mid-Tower Case to cart">+</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="products__cta">
+        <a href="#" class="btn btn--outline-blue">View All Products &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why CTech -->
+  <section class="why-ctech z-pattern" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Why CTech</span>
+        <h2 class="section-title" id="about-heading">Built for PC Builders</h2>
+        <p class="section-desc">We understand what PC builders need — that is why thousands choose CTech every month.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-card__icon">
+            <img src="images/icon-fast-shipping.svg" alt="Line art icon of a delivery truck with a stopwatch representing fast shipping" width="48" height="48">
+          </div>
+          <h3 class="feature-card__title">Free Fast Shipping</h3>
+          <p class="feature-card__desc">Free 2-day shipping on orders over $49. Same-day dispatch for orders placed before 2 PM.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon">
+            <img src="images/icon-genuine-parts.svg" alt="Green circular badge with a white checkmark representing guaranteed genuine parts" width="48" height="48">
+          </div>
+          <h3 class="feature-card__title">100% Genuine Parts</h3>
+          <p class="feature-card__desc">Every component is sourced directly from manufacturers with full authenticity guarantee.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon">
+            <img src="images/icon-expert-support.svg" alt="Line art icon of a support technician with a headset and laptop representing expert PC support" width="48" height="48">
+          </div>
+          <h3 class="feature-card__title">Expert PC Support</h3>
+          <p class="feature-card__desc">Our certified technicians are available 7 days a week to help you pick the right parts.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon">
+            <img src="images/icon-best-price.svg" alt="Yellow price tag icon with the text Best Price inside representing price match guarantee" width="48" height="48">
+          </div>
+          <h3 class="feature-card__title">Best Price Match</h3>
+          <p class="feature-card__desc">Found it cheaper elsewhere? We will match any verified competitor price, no questions asked.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner (Z-pattern: message left → action right) -->
+  <section class="cta-banner z-pattern" id="cta" aria-labelledby="cta-heading">
+    <div class="container cta-banner__inner">
+      <div class="cta-banner__content">
+        <h2 class="cta-banner__title" id="cta-heading">Ready to Start Your Build?</h2>
+        <p class="cta-banner__desc">Explore over 5,000 genuine PC components at the best prices. Free shipping on orders over $49 — limited-time deals updated daily.</p>
+      </div>
+      <div class="cta-banner__buttons">
+        <a href="#products" class="btn btn--white">Shop All Parts &rarr;</a>
+        <a href="#contact" class="btn btn--ghost-white">Talk to an Expert</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Site footer: brand, navigation, contact, legal -->
+  <footer class="footer" id="contact" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="images/ctech-logo.webp" alt="CTech company logo, a stylized white C and T monogram" class="logo__img" width="40" height="40">
+            <span class="logo__text">CTech</span>
+          </div>
+          <p class="footer__desc">CTech is your trusted online destination for genuine PC components. From processors to peripherals — we have got your build covered.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Follow CTech on X">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow CTech on Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow CTech on Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow CTech on YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Quick links">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">All Products</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Checkout</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Product categories">
+          <h4 class="footer__heading">Categories</h4>
+          <ul class="footer__links">
+            <li><a href="#">Processors</a></li>
+            <li><a href="#">Graphics Cards</a></li>
+            <li><a href="#">Motherboards</a></li>
+            <li><a href="#">RAM Memory</a></li>
+            <li><a href="#">Storage Drives</a></li>
+            <li><a href="#">Power Supplies</a></li>
+            <li><a href="#categories">CPU Cooling</a></li>
+          </ul>
+        </nav>
+
+        <address class="footer__contact">
+          <h4 class="footer__heading">Contact Us</h4>
+          <ul class="contact-list">
+            <li>
+              <svg class="contact-list__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>CRMC-UP, CCS DEPT Bogo City, CEBU, 6010</span>
+            </li>
+            <li>
+              <svg class="contact-list__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+63 912-345-6789</span>
+            </li>
+            <li>
+              <svg class="contact-list__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>support@c-tech.com</span>
+            </li>
+            <li>
+              <svg class="contact-list__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Mon-Fri: 9 AM - 7 PM PT<br>Sat-Sun: 10 AM - 5 PM PT</span>
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 CTech Inc. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Returns Policy</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

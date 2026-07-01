@@ -8,22 +8,17 @@
   <meta name="author" content="CTech Inc.">
   <meta name="keywords" content="PC components, processors, graphics cards, motherboards, RAM, CTech, computer parts, build a PC">
   <title>CTech — Genuine PC Components | Shop CPUs, GPUs &amp; More</title>
-  <link rel="canonical" href="index.html">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+  <link rel="icon" href="images/ctech-logo.webp" type="image/webp">
   <meta property="og:title" content="CTech — Genuine PC Components">
   <meta property="og:description" content="Shop genuine PC components at CTech. Free shipping over $49 on processors, GPUs, motherboards and more.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
 
   <!-- Site header: logo, primary navigation, search, cart -->
   <header class="header" role="banner">
@@ -42,30 +37,30 @@
       </nav>
 
       <div class="header__actions">
-        <div class="search-bar" role="search">
+        <div class="search-bar" id="product-search" role="search">
           <input type="search" class="search-bar__input" placeholder="Search processors, GPUs, RAM..." aria-label="Search products">
           <svg class="search-bar__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         </div>
-        <button class="icon-btn mobile-search-btn" aria-label="Search products">
+        <button type="button" class="icon-btn mobile-search-btn" aria-label="Open product search" aria-controls="product-search" aria-expanded="false">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         </button>
         <button class="icon-btn" aria-label="Shopping cart, 1 item">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
           <span class="cart-badge">1</span>
         </button>
-        <label for="nav-toggle" class="hamburger" aria-label="Open navigation menu">
+        <button type="button" class="hamburger" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
           <span></span><span></span><span></span>
-        </label>
+        </button>
       </div>
     </div>
   </header>
 
   <!-- Mobile navigation overlay -->
-  <aside class="mobile-menu" role="dialog" aria-label="Navigation menu" aria-modal="true">
-    <label for="nav-toggle" class="mobile-menu__overlay" aria-label="Close navigation menu"></label>
+  <aside class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu" aria-modal="true" aria-hidden="true" inert>
+    <button type="button" class="mobile-menu__overlay" aria-label="Close navigation menu"></button>
     <div class="mobile-menu__panel">
       <div class="mobile-menu__close">
-        <label for="nav-toggle" class="mobile-menu__close-btn" aria-label="Close navigation menu">&times;</label>
+        <button type="button" class="mobile-menu__close-btn" aria-label="Close navigation menu">&times;</button>
       </div>
       <nav class="mobile-menu__nav" aria-label="Mobile navigation">
         <a href="#home" class="mobile-menu__link mobile-menu__link--active">Home</a>
@@ -139,10 +134,11 @@
         <h2 class="section-title" id="categories-heading">Find Every Part You Need</h2>
         <p class="section-desc">From CPUs to cases, we stock the full range of PC components from leading brands.</p>
       </div>
-      <div class="category-grid">
+      <div class="category-carousel" aria-label="Product categories carousel" tabindex="0">
+        <div class="category-grid">
         <article class="category-card">
           <div class="category-card__image-wrap">
-            <img src="images/category-processors.webp" alt="An Intel Core i5 processor chip resting on a circuit board" class="category-card__image" width="293" height="200">
+            <img src="images/category-processors.webp" alt="An Intel Core i5 processor chip resting on a circuit board" class="category-card__image" width="293" height="200" fetchpriority="high">
           </div>
           <div class="category-card__body">
             <h3 class="category-card__title">Processors</h3>
@@ -212,6 +208,7 @@
             <p class="category-card__desc">Complete your setup.</p>
           </div>
         </article>
+        </div>
       </div>
     </div>
   </section>
@@ -407,6 +404,7 @@
         </article>
 
       </div>
+      <p class="product-search-status" role="status" aria-live="polite"></p>
       <div class="products__cta">
         <a href="#" class="btn btn--outline-blue">View All Products &rarr;</a>
       </div>
@@ -497,7 +495,7 @@
         </div>
 
         <nav aria-label="Quick links">
-          <h4 class="footer__heading">Quick Links</h4>
+          <h2 class="footer__heading">Quick Links</h2>
           <ul class="footer__links">
             <li><a href="#home">Home</a></li>
             <li><a href="#products">All Products</a></li>
@@ -509,7 +507,7 @@
         </nav>
 
         <nav aria-label="Product categories">
-          <h4 class="footer__heading">Categories</h4>
+          <h2 class="footer__heading">Categories</h2>
           <ul class="footer__links">
             <li><a href="#">Processors</a></li>
             <li><a href="#">Graphics Cards</a></li>
@@ -522,7 +520,7 @@
         </nav>
 
         <address class="footer__contact">
-          <h4 class="footer__heading">Contact Us</h4>
+          <h2 class="footer__heading">Contact Us</h2>
           <ul class="contact-list">
             <li>
               <svg class="contact-list__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -556,5 +554,9 @@
     </div>
   </footer>
 
+  <script src="js/category-carousel.js" defer></script>
+  <script src="js/mobile-menu.js" defer></script>
+  <script src="js/product-search.js" defer></script>
+  <script src="js/scroll-reveal.js" defer></script>
 </body>
 </html>
